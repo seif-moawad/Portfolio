@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Startup Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>    
+<body>
+    <header class="header">
+        <div class="logo-nav-container">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/99f1d3174173189.649e736587517.png" alt="Startup Logo" class="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About-us">About me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Achievements">Achievements</a></li>
+                    <li><a href="#Contact-me">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 id="typed-strings">
+            <span class="white">Welcome to </span>
+            <span class="red" id="typed"></span>
+            <span class="white"> Portfolio!</span>
+        </h1>
+               
+    </header>
+    <main class="main">
+        <section id="About-us">
+            <h2>About Me</h2>
+            <div class="about-me-content">
+                <img class="about-me-image" src="https://scontent.fcai19-5.fna.fbcdn.net/v/t39.30808-6/312499487_5398134580313489_2606170304260466344_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeE-i4_QafxafXAlrgBXDTI5qLFLmbV8qtyosUuZtXyq3FZ-jzlIl_SvtROAihL7CPVdF8y-68ZDftkDDMpK2XqU&_nc_ohc=ypFawrW_SHcAX8XdP8u&_nc_ht=scontent.fcai19-5.fna&oh=00_AfAtFstV0ZGcin2Qwl9cs0njqE0f3L-RISEpZxnzZu1LJQ&oe=64A2CEA8" alt="Your image description">
+                <div class="text-and-info">
+                    <p class="about-me-paragraph">A fresh Computer Science graduate from MSA University with a keen interest in Artificial Intelligence,
+                                                  seeking an internship that will allow me to enhance both my technical and personal skills. Passionate<br>
+                                                  about the AI track and aiming to secure a role as an AI engineer.</p>
+                    <hr>
+                    <div class="additional-info">
+                        <div class="info-column">
+                            <p>Name: Seifeldin</p>
+                            <p>Gender: Male</p>
+                            <p>Age: 22</p>
+                        </div>
+                        <div class="info-column">
+                            <p>Country: Egypt</p>
+                            <p>University: MSA University</p>
+                            <p>GitHub: <a href="https://github.com/seif-moawad">View my account</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>                                      
+            <section id="Skills">
+                <h2 id="Skills-heading">My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-column">
+                        <div class="skill-item">
+                            <figure>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Python_icon_%28black_and_white%29.svg/1200px-Python_icon_%28black_and_white%29.svg.png" alt="Skill 1">
+                                <figcaption>Python</figcaption>
+                            </figure>
+                        </div>
+                        <div class="skill-item">
+                            <figure>
+                                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Skill 4">
+                                <figcaption>GitHub</figcaption>
+                            </figure>
+                        </div>
+                        
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-item">
+                            <figure>
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAClpaX8/Pytra3x8fGCgoLU1NR5eXmxsbH39/fR0dG5ubnc3Nzl5eX6+vrBwcFtbW0xMTHe3t5MTEyRkZF8fHxkZGRbW1sLCwuIiIgmJiY3NzcgICBUVFSdnZ1CQkKOjo5OTk40NDS+vr4bGxs/Pz8VFRVYWFhpaWmdBedVAAAHe0lEQVR4nO2d12LiMBBFcQgGTC8JLQWyJCH//4MbbUn1qMzcsYTj87yxdRfQVI1arYaGhoaGhoYGIMX0cMoMp8O0iL0YBQar7CMv3dgLAjNeZ19Zj2MvCsgk/6bPkNfmu3pRqs9wEXtpEKa3pMAsezzGXp6Y0dKiz7AcxV6iiM7Moc/w0om9TD4HD32GQ+yFMrn01Ge4jL1YBoN5gMAsm09jLziQxV2QPsPDIvaiAyh6wfoMvbPZcu5Z+gxXsZfuxXDDFvjKMPbynQyeJPpe2acddJSEEOGs0g062uUhRDjb2EoI6BAinBQ9gOkOKDBBD4Bh4V0k5QEwLbyLdDwAvoV3cR9b2h9kFt7BJr4H0JVaeBdPg6j6xiv3EsVE9ADa2wr0GbbtOAJDYngpMdKOYAvvYle1B+BMEuKpNO3Y0bHwLmaVeQBXUfQZqskBDKPpM/TV9Q1uogrMshtdDwASw0tRLDzCYngp+URHIDKGl6LhAVjLgNVzi/YARvvYkr6xR3oAXmXA6oF5AO14Ft7FFSTo6MeWYUXuAQSWAatnLvMAxvgkIZ47vgdQXMdevCfXTA+gyhheCqcKMHmIveogHoJ31c5z7DUH8hxoHDuxFxzOJkhiW8MJXa5m+dX9xf0h7601nMBdiEJwovcm73e/bndFt5//wr5m5i9winxvbml57hyhOS1/4w+rtWxy90u7W9jrbn0FonJNd74x3BH1s/TtVsWUk2YhztQY82198Hwb4l0voc4iJgb1sxiAfAyrBo/oBfALpuT/mdzm7al4z7n2eo/U2vu9pRzpz3Hp9RbhS2QR6UD4dn2FJ2mytpDFNOoKET3ph5QVYipDktyXskJUWUjwY9RViEtCj9JUiOy0W6SoENtI0E1PIbo0y4xR9RTim3p5yUw1hRJPjYLlwWkpfFIQyItTtRRqtPLwGo+VFPpkK9qj/vXpb5r5eb0dOgNkZpSqo7Dnljf8np+c2f5fBtwQTkeh64EL6vu2JZyE8YmpT0mh4zu6sHUZlfX/ihpzNRTa81sT136Rfy0ayarqGgqt7qiPZ/LJGxoJ++YUFFqLBX4b/vtBrs4LQ9QnFBRatv3C9/P4X94EtLXgFVo+wo7/jj83xZspoiiLV0h/hEFF1ufJGNM5DldI5yeLsE/kMehf08AV0rYQXP30Ba1wQz4kTjc/XiF5YPeoJsEBWiGVmynUFLgAKyS/pPH6UcEKc+IJ/HSnGLBCaieN2NEIVki0kYg/wrfEHZFvsywVq/AX8QDxr/DtrAGRyqhMIfEzlG+kySgkzlnLG8OTUUjMWeEnWf6TjMLyptUJU9YHUlFI2Htpr0GWjkIicgI0HKWicFX+54Co4m0cBjFxoyqFRL2J3/dnqdBdOlavo5A4dswWaDtUeBFFIbGgRmGjMCGFxACgRuEZKSTSUPz21OQUEqVf/lCC5OzhuvzPAWMJUvFp9uV/Djg3nIpfSjwNkGhLRiGRiGLK+kAyCokYX37wLRmFxN4nPzaVjEIifGozdb2TjMI58QBxDJyMQqphrz45b7JuIc8nsgErrH/tqf71w/rXgH9AHb/+vRiWfppIs/ngCu/IpxRhXU7J9kRZuvSD+to2yfa12brYO/6fyy7h3kTbUYt69JfajyL47ajvR2uT7BG2NQl79XlvUu/zplJu/3Ce7fnmNMgCaA2FrvMWI1sCtWw8SHLnLbJn1wPpMzPEN1ww6lZFocfhw5JzTxv7uSfuPHQdhX5n1xb9fP133bt13ncei07q7NoPOH/oO9snkJTOkJL5DAmsEo+aQoXhzLwKj55Cr90mhOTO46NHDiQ4U4Es1LBIci4GUmKis01wv8Vk59OgpmNIogtthZD5GKJIX11htpTeCJ/6rK/sLOa1Saew9/jD7tvSkg5VtP2MvHDE3VPls2/dIzoMgEnlrNmXgmkYb/ht5nHml47FiUSD51tBM2hDPscxpqa693wdao7w/ui357SPqFvcvG+8BL3vldztqw5wpUZn1u8N6MVjvaGlPjWEVlID9nDwTPZ572LwVWYxuJ+hiob/CJjJ3ppo3IzwtJ4d/szV761OGvezBs3Vx1iMagm7G+EMJT4G52yL9G7psnHHcYZTuknOBTP0Pp+7gvhBad3vezLU/c4uQ93vXWv9gLvzWvW//9BQ9zssDXW/h9SQkgegdJt87e8DbtX/TmdD3e/lNtT9bnVDPA+AGFSBpxOnEx9q4V2MUBlOf5ZoC+9iyu2t47HTsPAuqrxrVsnCuxC1uoawRYUQ4YzBqeNSyua2V0hXI7f7kSd9C+9iCLtks4SNdzVJFWJ6BQBiQEz18Np5nfSqtPAuEPdPfoHVC6AJ2AOYx7DwLpA5APz1URBgOQDyeHF8IDmAyBbehTgHsEe2GusgqwKkYeFd8HMAlcXwUphVgEpjeCmMHEDlMbyUQA8gSgwvJcQDiBTDS/H2AL7d23U+eHkAyll6bZweQAVZem3sHkA1WXptaA/gbCy8C8IDOCsL76LEAzg7C++i+zmX00s/hAinPdiuTLvD7Wo7OF8D2NDQ0NDQ0JAkvwEZHZM/lSlVIAAAAABJRU5ErkJggg==" alt="Skill 2">
+                                <figcaption>C++</figcaption>
+                            </figure>
+                        </div>
+                        <div class="skill-item">
+                            <figure>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Bd1p9riah2CVNmLD4WDj4hTwtVSsmzGp0VOfcoYfJ8Dfh3yhgi3JWoGdgsvuaVD6dzU&usqp=CAU" alt="Skill 5">
+                                <figcaption>Pytorch</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-item">
+                            <figure>
+                                <img src="https://user-images.githubusercontent.com/87650074/182376186-b09b1ac6-7cc7-4ffa-964a-dce0a65db2f6.svg" alt="Skill 3">
+                                <figcaption>C#</figcaption>
+                            </figure>
+                        </div>
+                        <div class="skill-item">
+                            <figure>
+                                <img src="https://static-00.iconduck.com/assets.00/opencv-icon-512x479-0siohxfm.png" alt="Skill 6">
+                                <figcaption>Opencv</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill-item">
+                            <figure>
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/free-html5-2474813-2056052.png" alt="Skill 4">
+                                <figcaption>HTML 5</figcaption>
+                            </figure>
+                        </div>
+                        <div class="skill-item">
+                            <figure>
+                                <img src="https://cdn-icons-png.flaticon.com/512/82/82127.png" alt="Skill 8">
+                                <figcaption>CSS 3</figcaption>
+                            </figure>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>            
+            <section id="Projects">
+                <h2 id="projects-heading">Our Projects</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/acc1c2174351921.64a1158d5dc9d.png" alt="Project 1">
+                        <h2>Realistic image-based using 3D virtual try-on</h2>
+                        <p>Developed a solution to decrease the return rate of online fashion shopping by addressing the fitting issue.
+                            The project's core concept was to create a 3D virtual try-on system allowing users to visualize themselves
+                            wearing selected clothes before purchasing, thus facilitating more accurate buying decisions.</p>
+                        <a href="#" class="btn-continue-reading">Continue Reading</a>
+                    </div>
+            
+                    <div class="portfolio-item">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b07ce8174351531.64a113de9102a.png" alt="Project 2">
+                        <h2> Interactive System for Assisting the Visually Impaired</h2>
+                        <p>The Interactive System for Assisting the Visually Impaired is a comprehensive and intuitive solution that 
+                            employs advanced technology to provide assistance, accessibility, and independence to individuals with 
+                            visual impairments. By integrating object detection, speech synthesis, eye gaze tracking, red ball </p>
+                        <a href="#" class="btn-continue-reading">Continue Reading</a>
+                        <div class="full-paragraph hidden">
+                            <p>The Interactive System for Assisting the Visually Impaired is a comprehensive and intuitive solution that 
+                                employs advanced technology to provide assistance, accessibility, and independence to individuals with 
+                                visual impairments. By integrating object detection, speech synthesis, eye gaze tracking, red ball 
+                                detection, time announcement, facial recognition, and emotion detection, this system offers a range of 
+                                functionalities tailored to the unique needs of visually impaired users. We hope this system enhances 
+                                the quality of life and empowers individuals with visual impairments to navigate their environment with 
+                                greater ease.</p>
+                        </div>
+                    </div>
+            
+                    <div class="portfolio-item">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/60805a174352205.64a117c646fb0.png" alt="Project 3">
+                        <h2>AI Maze Solver: Finding the Shortest Path to the Goal</h2>
+                        <p>Our AI Maze Solver project is a remarkable tool for efficiently finding the shortest path from the start to 
+                           the goal node in mazes. Whether you prefer quick results with Greedy Search, optimal solutions with A* 
+                           Search, or equality-based costs with Uniform Cost Search, our AI agent can handle them all. The ability to
+                             </p>
+                        <a href="#" class="btn-continue-reading">Continue Reading</a>
+                        <div class="full-paragraph hidden">
+                            <p>Our AI Maze Solver project is a remarkable tool for efficiently finding the shortest path from the start to 
+                                the goal node in mazes. Whether you prefer quick results with Greedy Search, optimal solutions with A* 
+                                Search, or equality-based costs with Uniform Cost Search, our AI agent can handle them all. The ability to
+                                highlight the selected path and evaluate the cost of traversal adds to the user's understanding of the 
+                                maze-solving process.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/seif-moawad?tab=repositories" class="btn-more-projects">More projects here</a>
+            </section>
+            <div id="popup-box">
+                <div id="popup-content">
+                    <h2>Project Details</h2>
+                    <p id="popup-paragraph"></p>
+                    <a href="#Projects" class="btn-close-popup">Close</a>
+                </div>
+            </div>                              
+            <section id="Achievements">
+                <h2 id="Achievements-heading" style="text-align: center;">Achievements</h2>
+                <div class="achievement-content">
+                    <div class="achievement-details" style="text-align: center;">
+                        <h2>Published a research paper in the 16th international conference on recent advances in engineering and technology.</h2>
+                        <p class="achievement-institute">Obtained this certification from Research foundation after publishing and presenting our research paper.</p>
+                        <p class="achievement-date">Date: 2023</p>
+                    </div>
+                    <a href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7ff697174238997.649e7aa407710.png" class="btn-achievement">View certificate</a>
+                </div>
+                <div class="achievement-content">
+                    <div class="achievement-details" style="text-align: center;">
+                        <h2>Completed AI Training at ITI</h2>
+                        <p class="achievement-institute">Obtained a certificate from the Information Technology Institute (ITI) upon successful completion of the Artificial Intelligence (AI) course.</p>
+                        <p class="achievement-date">Date: 2022</p>
+                    </div>
+                    <a href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6b5d03174340967.64a09eed89357.jpg" class="btn-achievement">View certificate</a>
+                </div>
+                <div class="achievement-content">
+                    <div class="achievement-details" style="text-align: center;">
+                        <h2>Completed Huawei HCIA-AI Training</h2>
+                        <p class="achievement-institute">Obtained a certificate from Huawei upon successful completion of the Huawei Certified ICT Associate - Artificial Intelligence (HCIA-AI) training.</p>
+                        <p class="achievement-date">Date: 2022</p>
+                    </div>
+                    <a href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1d7ccc174340869.64a09e09bce55.jpg" class="btn-achievement">View certificate</a>
+                </div>
+                <div class="achievement-content">
+                    <div class="achievement-details" style="text-align: center;">
+                        <h2>Completed Data Analysis and Statistical Modeling Training</h2>
+                        <p class="achievement-institute">Obtained a certificate from the City of Scientific Research and Technological Applications (SRTA-City) upon successful completion of the Data Analysis and Statistical Modeling training.</p>
+                        <p class="achievement-date">Date: 2021</p>
+                    </div>
+                    <a href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/696219174340893.64a09e4861a54.jpg" class="btn-achievement">View certificate</a>
+                </div>
+                <div class="achievement-content">
+                    <div class="achievement-details" style="text-align: center;">
+                        <h2>AWS Academy Graduate - AWS Academy Cloud Foundations</h2>
+                        <p class="achievement-institute">Earned the "AWS Academy Graduate - AWS Academy Cloud Foundations" badge from Amazon Web Services Training and Certification.</p>
+                        <p class="achievement-date">Date: 2022</p>
+                    </div>
+                    <a href="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6be791174340797.64a09da4b3d51.png" class="btn-achievement">View certificate</a>
+                </div>
+                <div class="achievement-content">
+                    <div class="achievement-details" style="text-align: center;">
+                        <h2>Nominated for Faculty Day - DeepMind's Event</h2>
+                        <p class="achievement-institute">Selected by my college to participate in the Faculty Day event organized by Faculty of Computer Science. Showcased graduation projects in a poster day for Company's.</p>
+                        <p class="achievement-date">Date: 2023</p>
+                    </div>
+                    <a href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fdaca4174881843.64aa52f50dbb2.png" class="btn-achievement">View certificate</a>
+                </div>
+                <div class="achievement-content">
+                    <div class="achievement-details" style="text-align: center;">
+                        <h2>Completed UI & UX training</h2>
+                        <p class="achievement-institute">Obtained a certificate from Instant and Orange Digital Center upon successful completion of the UI & UX training.</p>
+                        <p class="achievement-date">Date: 2022</p>
+                    </div>
+                    <a href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1a7587174881937.64aa538d4091b.png" class="btn-achievement">View certificate</a>
+                </div>
+            </section>                             
+            <section id="Contact-me">
+                <h2 id="Contact-heading">Contact Me</h2>
+                <div class="contact-buttons">
+                    <a href="https://drive.google.com/file/d/1_aMbDK-IlxzSHAwZWna7d5zFwh4Qff7m/view?usp=sharing" class="btn-contact" target="_blank">Download CV</a>
+                    <a href="mailto:seif.moawad11@gmail.com" class="btn-contact">Email Me</a>
+                
+            </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="main.js"></script>
+</body>
+</html>

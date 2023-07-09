@@ -1,0 +1,686 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-image: url("https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?w=1380&t=st=1688882483~exp=1688883083~hmac=4a4037debeecd64f27847963b4496f3afd731713c853b14c62c26f8f3f41aa54");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:  #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: fixed; /* Add this */
+    top: 0;
+    padding: 5px 2%;
+    background-color: rgba(0,0,0,0.6); /* Consider this to make navbar stand out more */
+    z-index: 999; /* Ensure navbar is above other content */
+}
+
+#typed-strings {
+    font-size: 50px;
+    margin-top: 100 px;
+    font-weight: 250;
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: red;
+}
+
+.logo {
+    height: 70px;
+    padding: 10px;
+    width: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navbar ul li {
+    float: none;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative; /* Required to position the pseudo-element */
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create a pseudo-element for the underline */
+.navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+/* Expand the underline on hover */
+.navbar ul li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#Projects h2 {
+    text-align: center;
+    padding-bottom: 20px; 
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 250px; /* Adjust the height as per your preference */
+    object-fit: cover;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    width: 250%;
+    float: left;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each item as per your preference */
+    margin: 10px;
+}
+
+.portfolio-item p {
+    margin-bottom: 20px;
+}
+
+.full-paragraph {
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    width: 300px; /* Adjust the width as needed */
+}
+
+.full-paragraph.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.btn-continue-reading {
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#popup-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    text-align: center;
+}
+
+#popup-paragraph {
+    text-align: left;
+}
+
+#popup-box.show {
+    display: block;
+}
+
+#popup-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#popup-content h2 {
+    margin-top: 0;
+}
+
+#popup-content .btn-close-popup {
+    display: block;
+    margin-top: 10px;
+}
+
+#projects-heading {
+    position: relative;
+}
+
+#projects-heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px; /* Position the underline just beneath the text */
+    width: 12%;
+    height: 3px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+#projects-heading:hover::after {
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+#Projects {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.btn-more-projects {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#Skills-heading {
+    position: relative;
+}
+
+#Skills-heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px; /* Position the underline just beneath the text */
+    width: 7%;
+    height: 3px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+#Skills-heading:hover::after {
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.skill-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-item {
+    text-align: center;
+    width: 300px; /* Set width to make the images the same size */
+    margin-bottom: 20px;
+}
+
+.skill-item img {
+    width: 70px;
+    height: 70px;
+    transition: filter 0.3s ease;
+}
+
+.skill-item img:hover {
+    filter: brightness(50%);
+}
+
+.skill-item figcaption {
+    padding-top: 10px; /* Add padding to top of label */
+}
+
+#Skills h2 {
+    text-align: center;
+    padding-bottom: 20px; /* Add padding to bottom of title */
+}
+
+.text-and-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-left: 20px; /* Optional: Adds some space to the left of the text and info */
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Optional: Adds some space above the additional info */
+}
+
+.info-column {
+    flex: 1;
+}
+
+.info-column p {
+    margin-bottom: 20px; /* Increase this value */
+}
+
+#About-us {
+    text-align: center;
+    padding: 100px 10%;
+}
+
+#About-us h2 {
+    position: relative;
+    margin-bottom: 50px;
+    display: inline-block; /* Change display to inline-block so the underline will fit the text */
+}
+
+#About-us h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px; /* Position the underline just beneath the text */
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+#About-us h2:hover::after {
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+#About-us-heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px; /* Position the underline just beneath the text */
+    width: 12%;
+    height: 3px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+#About-us-heading:hover::after {
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center; /* Centers items vertically in the container */
+    justify-content: space-between; /* Adds space between the paragraph and the image */
+    gap: 20px; /* Provides a gap between the paragraph and the image */
+}
+
+/* Keyframe animation for the about-me-paragraph */
+.about-me-paragraph {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 20;
+    }
+}
+
+.about-me-image {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 500px; /* Sets a fixed width for the image */
+    height: 500px; /* Sets a fixed height for the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; /* Add space above the image */
+}
+
+#Achievements-heading {
+    position: relative;
+}
+
+#Achievements-heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px; /* Position the underline just beneath the text */
+    width: 80%;
+    height: 3px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+#Achievements-heading:hover::after {
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+
+#Achievements {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+#Achievements h2 {
+    position: relative;
+    display: inline-block; /* Change display to inline-block so the underline will fit the text */
+}
+
+#Achievements h2 {
+    margin-bottom: 30px;
+}
+
+.achievement-item {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start of the line (left for LTR languages) */
+    padding-bottom: 1rem; /* Adds a little space below each item */
+}
+
+.achievement-content {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between; /* spreads the content across the line */
+    align-items: flex-start; /* aligns items vertically in the center */
+    width: 100%; /* allows the content to take up the full width */
+}
+
+.achievement-text {
+    flex: 1;
+}
+
+.achievement-details {
+    flex: 1;
+}
+
+.btn-achievement {
+    /* Your existing styles */
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    align-self: flex-end;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px; /* Adds a little space to the left of the button */
+    flex-shrink: 0; /* Prevents the button from shrinking smaller than its content */
+}
+
+.achievement-item h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.achievement-details {
+    margin-bottom: 10px;
+}
+
+.achievement-date, .achievement-duration {
+    margin-top: 5px;
+}
+
+.achievement-content {
+    margin-bottom: 20px;
+}
+
+#Contact-me h2 {
+    margin-bottom: 50px;
+}
+
+#Contact-me {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+#Contact-heading {
+    position: relative;
+}
+
+#Contact-heading::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px; /* Position the underline just beneath the text */
+    width: 10%;
+    height: 3px;
+    margin-bottom: 0px;
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+#Contact-heading:hover::after {
+    background: linear-gradient(to right, #1010ff56, #3c06ff69); /* Create a gradient from pink to orange */
+}
+
+.btn-contact {
+    /* Your existing styles */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #106ca6;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;  /* Adjust as needed */
+}
+
+.btn-contact:first-child {
+    /* The :first-child selector will only select the "Download CV" button */
+    width: 160px; /* Adjust as needed */
+}
+
+.btn-contact:nth-child(2) {
+    /* The :nth-child(2) selector will only select the "Email Me" button */
+    width: 150px; /* Adjust as needed */
+}
+
+
+.main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    padding-top: 5px; /* Add padding to top to account for navbar */
+}
+
+.footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    /* For medium devices like tablets */
+    .header {
+        height: 50vh;
+    }
+
+    #typed-strings {
+        font-size: 40px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+    }
+
+    .about-me-content, .achievement-content {
+        flex-direction: column;
+    }
+
+    .about-me-paragraph {
+        margin-right: 0;
+    }
+
+    .about-me-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .skill-item {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* For small devices like phones */
+    .header {
+        height: 30vh;
+    }
+
+    #typed-strings {
+        font-size: 30px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+    }
+
+    .about-me-content, .achievement-content {
+        flex-direction: column;
+    }
+
+    .about-me-paragraph {
+        margin-right: 0;
+    }
+
+    .about-me-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .skill-item {
+        width: 150px;
+    }
+}
+
+
+body.dark-mode {
+    background-color: #222;
+    color: #f8f9fa;
+}
+
+body.dark-mode .header {
+    background-color: #333;
+}
+
+body.dark-mode .navbar ul li a {
+    color: #f8f9fa;
+}
+
+body.dark-mode .navbar ul li a:hover {
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+body.dark-mode .main, body.dark-mode .footer {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+body.dark-mode .btn-contact, body.dark-mode .btn-more-projects, body.dark-mode .btn-achievement {
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+body.dark-mode .btn-contact:hover, body.dark-mode .btn-more-projects:hover, body.dark-mode .btn-achievement:hover {
+    background-color: #222;
+    color: #f8f9fa;
+}
+
+.navbar ul li button {
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar ul li button:hover {
+    background-color: #ddd;
+    color: black;
+}
